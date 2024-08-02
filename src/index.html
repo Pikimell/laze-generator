@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="https://img.icons8.com/color/344/free-bsd.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form class="box control-container js-control-elements">
+      <label for="laze-height">
+        Laze Height:
+        <input
+          class="form-control"
+          type="number"
+          name="laze-height"
+          value="25"
+          min="5"
+        />
+      </label>
+      <label for="laze-height">
+        Laze Width:
+        <input
+          class="form-control"
+          type="number"
+          name="laze-width"
+          value="25"
+          min="5"
+        />
+      </label>
+      <button type="button" class="btn btn-primary js-generate-btn">
+        Generate
+      </button>
+      <button class="btn btn-primary" type="submit">Show Generate</button>
+      <button type="button" class="btn btn-primary js-save-btn">
+        Save as PNG
+      </button>
+    </form>
+
+    <div class="box canvas-container">
+      <canvas class="js-canvas" height="1000" width="1000"> </canvas>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
